@@ -1,0 +1,23 @@
+
+
+entity Billing {
+	name String,
+    description String,
+    customerId Integer,
+    billingDate LocalDate,
+    quantity Integer,
+    billingAmount Double
+ }
+
+filter all
+// Set pagination options
+paginate Billing with pager
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceClass
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
